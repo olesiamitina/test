@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="/browse/RIA-9606" path="/browse/RIA-9606" id="22921613-89fc-4025-ad53-de67051e96f2" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="/browse/RIA-9606" path="/browse/RIA-9606" id="22921613-89fc-4025-ad53-de67051e96f2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="22921613-89fc-4025-ad53-de67051e96f2fileName">%2Fbrowse%2FRIA-9606</con:setting>
   </con:settings>
@@ -10,6 +10,10 @@
     <con:request name="GET Request" id="94306891-ff16-4413-b987-dab2b3cff766" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://smartbear.atlassian.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

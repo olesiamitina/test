@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d9861574-512b-4848-9b9d-606ec51d9eb1" activeEnvironment="Default environment" name="TestCase Tags" lastOpened="2016-02-02T16:58:38.995+03:00" resourceRoot="" soapui-version="6.0.0" encryptionMode="Not encrypted" updated="2.6.0-SNAPSHOT 2018-11-29T09:00:57Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerUIAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="&lt;all>"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.6.0-SNAPSHOT\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value="-T&quot;TestCase Tag 777&quot;"/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="c31bc027-4e48-44b5-953c-a26852f2de8e" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rapis02.aqa.com.ru" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Complex" path="/WebApi2/api/Complex" id="e4b1f60d-40e3-4328-82d2-562c99400bc8">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Complex" id="9f79fd97-638b-4e7a-ab63-8b7dc675e054" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:request name="Request 1" id="d61f4a10-121d-4a71-a1bd-9a62ff671fc8" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="65484d0d-df36-448c-a963-95d794e8efff" name="TestSuite 1">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="d3904661-f7eb-4d67-a157-acc24269610a" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="a32c3387-7558-4d4c-be84-476fadf1c27f">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="61126339-2251-4bd2-9265-3698449a9f52" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+      <con:tagId>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:tagId>
+      <con:tagId>b582c3e6-01ca-4b26-a305-d4598bd6520d</con:tagId>
+      <con:tagId>c4f7d221-8ba7-4b26-bd77-761685eccde2</con:tagId>
+    </con:testCase>
+    <con:testCase id="19321f19-5679-4b3a-aec1-243eb9944faf" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="f9f2db94-3ee7-4396-9cd4-3ce14626a838">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="1ef09f68-ebaf-4657-a16d-a3a4e94d6ee9" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+      <con:tagId>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:tagId>
+      <con:tagId>b582c3e6-01ca-4b26-a305-d4598bd6520d</con:tagId>
+      <con:tagId>b582c3e6-01ca-4b26-a305-d4598bd6520d</con:tagId>
+    </con:testCase>
+    <con:testCase id="7d0ecbf3-9f1c-4c83-a1db-5f3f4f92c8b8" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="748e4356-de02-442a-8969-1c7fed88ce5b">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="eb603550-7eed-4802-bc4f-0b9f5a28641a" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+      <con:tagId>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:tagId>
+    </con:testCase>
+    <con:testCase id="fa796d58-c382-4b06-ab0b-a824836b023f" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 4" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="6570b28b-485d-46d2-89d1-3bebdfd85d94">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="552275c7-f9a6-4378-90a6-f7b46d0dad72" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+    </con:testCase>
+    <con:testCase id="4e3cf329-5b94-451f-bf52-687fe1df3295" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 5" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="f58080c7-263c-4459-b63c-ca097b242da8">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="8d2d8875-0f6a-4147-9dad-4476ffd12c6b" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="c8a1832f-afd2-4680-abd3-a50b65db5244" name="TestSuite 2">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="a35d6cf9-0eb2-415e-accb-efc8d361fa94" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="4feb5d00-a3a4-4100-8942-98e1e8cc8cef">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="3ae97b12-366f-4844-bafa-d255dad5382e" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+      <con:tagId>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:tagId>
+      <con:tagId>b582c3e6-01ca-4b26-a305-d4598bd6520d</con:tagId>
+      <con:tagId>b582c3e6-01ca-4b26-a305-d4598bd6520d</con:tagId>
+    </con:testCase>
+    <con:testCase id="210d72ed-c930-4d51-9ac6-f0fe9c909f7a" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="b883cbae-230a-47c2-afd0-de414986cd81">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="7ddfc7b7-1816-4d04-9037-b03b39906dcc" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+      <con:tagId>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:tagId>
+    </con:testCase>
+    <con:testCase id="d44bb126-db85-48de-b137-59e22145950a" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="6f5326c4-2951-4078-87c8-bd4a6e44b3df">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="a30edf6f-2b2e-4cec-b8a0-c0ec2f1e7d68" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+    </con:testCase>
+    <con:testCase id="582f1774-4dad-40f3-8b7e-37426362d8c9" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 4" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="1df02f02-6cfd-4ec6-93ae-a9841134cd06">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="f70c45b8-fa49-441b-937a-543b95fa29f3" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="55562cf7-b510-431f-a5e2-ec58e631c2c1" name="TestSuite 3">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="34a77a1d-844e-44c0-b5a1-b30eb6e25ab1" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="b8f975cc-24fa-4442-b374-a48601618dd5">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="4cd2ba4c-e992-40c8-ab23-48f5c72078f4" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+      <con:tagId>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:tagId>
+    </con:testCase>
+    <con:testCase id="a9d73795-772c-4588-958e-32ce87991c0b" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="038acacb-b691-4abe-99e8-acaf756e4fdf">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="aa2c839f-b030-4b53-b07d-79809eeb3ba6" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:tagId>
+    </con:testCase>
+    <con:testCase id="70002221-ca7e-459f-8a57-9ac9df0f2916" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="restrequest" name="Complex" id="8605632e-b374-4775-b1c0-4e74f868bab7">
+        <con:settings/>
+        <con:config service="http://rapis02.aqa.com.ru" methodName="Complex" resourcePath="/WebApi2/api/Complex" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Complex" id="a764da0c-e4d2-4638-8a0c-163e42d5add6" mediaType="application/json">
+            <con:settings/>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:authRepository/>
+  <con:tags>
+    <con:tag>
+      <con:id>8f023f16-261a-4615-bb7f-3cf9fe1dc823</con:id>
+      <con:name>Tag 1</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>92e42df6-1cfa-4dcb-b0d0-33db077d2261</con:id>
+      <con:name>Tag 2</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>b582c3e6-01ca-4b26-a305-d4598bd6520d</con:id>
+      <con:name>Tag 3</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>c4f7d221-8ba7-4b26-bd77-761685eccde2</con:id>
+      <con:name>Tag 4</con:name>
+    </con:tag>
+  </con:tags>
+</con:soapui-project>

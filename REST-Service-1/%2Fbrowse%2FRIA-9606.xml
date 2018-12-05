@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/browse/RIA-9606" path="/browse/RIA-9606" id="22921613-89fc-4025-ad53-de67051e96f2" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="22921613-89fc-4025-ad53-de67051e96f2fileName">%2Fbrowse%2FRIA-9606</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="8df38b95-1fb1-4882-b7c3-e3b18567e0a8" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Request" id="94306891-ff16-4413-b987-dab2b3cff766" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://smartbear.atlassian.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

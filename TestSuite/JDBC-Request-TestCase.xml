@@ -3,6 +3,22 @@
   <con:settings>
     <con:setting id="a0589153-6fb1-4945-83d1-f0a34a538551fileName">JDBC-Request-TestCase</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="REST Request" id="abeaac5a-265e-4817-b528-775e2466df0e">
+    <con:settings/>
+    <con:config service="REST Service 1" resourcePath="/browse/RIA-9606" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="94306891-ff16-4413-b987-dab2b3cff766" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://smartbear.atlassian.net</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
   <con:testStep type="jdbc" name="JDBC Request" id="75d563b3-28ad-4fc6-9881-dc00cf754c7f">
     <con:settings>
       <con:setting id="prettyPrintResponse">true</con:setting>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a0589153-6fb1-4945-83d1-f0a34a538551" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="JDBC Request TestCase" searchProperties="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a0589153-6fb1-4945-83d1-f0a34a538551fileName">JDBC-Request-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="jdbc" name="JDBC Request" id="75d563b3-28ad-4fc6-9881-dc00cf754c7f">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+      <con:setting id="discardResponse">false</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName xsi:nil="true"/>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://rapis01.aqa.com.ru:1433;databaseName=DatabaseVariable;user=DatabaseVariable;password=PASS_VALUE</con:connectionString>
+      <con:password>DatabaseVariable</con:password>
+      <con:connectionProperties/>
+      <con:query>Select table1.ID, table1.Name1
+From table1</con:query>
+      <con:assertion type="GroovyScriptAssertion" id="85fe2abc-2fad-408d-a298-90b206021a3c" name="Script Assertion">
+        <con:configuration>
+          <scriptText>import com.eviware.soapui.support.XmlHolder
+
+def holder = new XmlHolder( messageExchange.responseContentAsXml )</scriptText>
+        </con:configuration>
+      </con:assertion>
+      <con:assertion type="JDBC Status" id="5fb38a3f-b237-40e3-b275-67bc5926e123" name="JDBC Status Assertion"/>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
